@@ -20,7 +20,7 @@ for (k = '0'; k <= '9'; k++)
 {
 for (g = '0'; g <= '9'; g++)
 {
-if (c < i && i || k && k < g)
+if ((c < i) && ( k < g))
 {
 putchar(c);
 putchar(i);
