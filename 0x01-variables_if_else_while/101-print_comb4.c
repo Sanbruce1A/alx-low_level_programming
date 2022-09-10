@@ -20,7 +20,7 @@ putchar(i);
 putchar(k);
 if (c != '7')
 {
-putchar(';');
+putchar(',');
 putchar(' ');
 }
 }
