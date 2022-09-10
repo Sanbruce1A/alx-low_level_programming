@@ -22,8 +22,10 @@ for (g = '0'; g <= '9'; g++)
 {
 if (c < i && i < k && k < g)
 {
-putchar(c,i);
-putchar(k,g);
+putchar(c);
+putchar(i);
+putchar(k);
+putchar(g);
 if (c != '7')
 {
 putchar(',');
