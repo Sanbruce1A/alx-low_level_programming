@@ -14,11 +14,10 @@ void puts2(char *str)
 	{
 		if (counter % 2 == 0)
 
-			_putchar(str[counter] != '\0')
-			{
-				if (counter % 2 == 0)
+		{
 
-					_putchar(str[counter]);
+		_putchar(str[counter]);
+
 				counter++;
 			}
 		_putchar(10);
