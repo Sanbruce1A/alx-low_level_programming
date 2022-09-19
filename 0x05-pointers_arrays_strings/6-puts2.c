@@ -6,7 +6,7 @@
  * Return:0
  */
 
-void puts2(cahr *str)
+void puts2(char *str)
 {
 	int counter = 0;
 
