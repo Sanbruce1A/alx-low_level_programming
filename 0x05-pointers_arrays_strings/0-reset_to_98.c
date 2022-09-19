@@ -2,8 +2,8 @@
 
 /**
  * reset_to_98 -  updates the value of n points to 98
- * @n: void reset_to_98
- * Description: updates the value it points
+ * @n: Pointer given by the name function
+ * Description: n equals to 98
  *
  */
 
