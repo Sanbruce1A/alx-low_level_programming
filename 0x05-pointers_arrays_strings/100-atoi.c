@@ -20,7 +20,7 @@ int _atoi(char *s)
 		if (s[counter] >= 48 && s[counter] <= 57)
 		{
 			i++;
-			result = result * 10 + s[counter] - '0'
+			result = result * 10 + s[counter] - '0';
 		}
 		if (i > 0 && (s[counter] < 48 || s[counter] > 57))
 			break;
