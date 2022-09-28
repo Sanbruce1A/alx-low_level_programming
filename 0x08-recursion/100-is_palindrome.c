@@ -29,7 +29,7 @@ int palind3(char *a, int l)
 		return (0);
 	else if (*a == 0)
 		return (1);
-	return (palinda3(a + 1, l - 2));
+	return (palind3(a + 1, l - 2));
 }
 
 /**
@@ -44,6 +44,6 @@ int is_palindrome(char *s)
 	int l;
 
 	l = palind2(s, 0);
-	return (palinda3(s, 1));
+	return (palind3(s, 1));
 
 }
