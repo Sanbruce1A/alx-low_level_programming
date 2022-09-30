@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int night, spike;
 
-	if (arg == 3)
+	if (argc == 3)
 
 	{
 		night = atoi(argv[1]);
@@ -24,6 +24,7 @@ int main(int argc, char *argv[])
 
 		return (0);
 	}
+
 	printf("Error\n");
 
 	return (1);
