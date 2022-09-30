@@ -1,6 +1,5 @@
-#include <stdio.h>
 #include "main.h"
-
+#include <stdio.h>
 /**
  * main - print number of arg passd
  * @argc: argument 1
@@ -8,7 +7,7 @@
  * Return: Always 0
  */
 
-int main(int argc, **argv)
+int main(int argc, **argv[])
 {
 	(void) argv;
 	printf("%d\n", argc - 1);
