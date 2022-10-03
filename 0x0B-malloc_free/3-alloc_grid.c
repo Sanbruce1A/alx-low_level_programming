@@ -29,24 +29,24 @@ int **alloc_grid(int width, int height)
 
 	for (i = 0; i < height; i++)
 	{
-		/*size of night[i] using malloc*/
+		/*size of spike[i] using malloc*/
 
-		night[i] = malloc(width * sizeof(int));
+		spike[i] = malloc(width * sizeof(int));
 		/*check if night[i] is equal to Null*/
 
 		if (night[i] == NULL)
 		{
 			while (i >= 0)
-				/*free night[i]*/
-				free(night[i--]);
-			/* Free night*/
+				/*free spike[i]*/
+				free(spike[i--]);
+			/* Free spike*/
 
-			free(night);
+			free(spike);
 			return (NULL);
 }
 			/*for every a that is less than width increase a*/
 			for (a = 0; a < width; a++)
-				night[i][a] = 0;
+				spike[i][a] = 0;
 	}
-	return (night);
+	return (spike);
 }
