@@ -12,7 +12,9 @@
 char *str_concat(char *s1, char *s2)
 {
 	unsigned int night1 = 0, night2 = 0;
+
 	char *ptr, *burn;
+
 	ptr = s1;
 
 	if (s1)
