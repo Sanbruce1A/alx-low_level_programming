@@ -3,14 +3,14 @@
 
 /**
  * malloc_checked - function that allocates memory
- * @a: number of memory to be allocated
+ * @b: number of memory to be allocated
  * Return: Void
  */
 
-void *malloc_checked(unsigned int a)
+void *malloc_checked(unsigned int b)
 {
 void *spike;
-spike = malloc(a);
+spike = malloc(b);
 if (spike == NULL)
 {
 	exit(98);
