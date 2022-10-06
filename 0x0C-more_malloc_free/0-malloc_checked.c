@@ -14,5 +14,5 @@ if (spike == NULL)
 {
 	exit(98);
 }
-return (night);
+return (spike);
 }
