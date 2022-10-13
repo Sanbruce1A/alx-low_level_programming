@@ -1,7 +1,7 @@
-#ifndef VARIADIC_FUNCTIONS
-#define VARIADIC_FUNCTIONS
+#ifndef _VARIADIC_FUNCTIONS
+#define _VARIADIC_FUNCTIONS
 
-#define <stdarg.h>
+#include <stdarg.h>
 int sum_them_all(const unsigned int n, ...);
 
 void print_numbers(const char *separator, const unsigned int n, ...);
