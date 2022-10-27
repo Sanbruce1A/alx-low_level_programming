@@ -11,10 +11,9 @@
 unsigned int binary_to_uint(const char *b)
 
 {
-
 	int spike = 0, j;
 
-	unsigned int number = 0, non_binary = 9;
+	unsigned int number = 0, non_binary = 0;
 
 	if (b == NULL)
 
