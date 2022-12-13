@@ -1,51 +1,31 @@
 #include "main.h"
-
 /**
- * _atoi - convert a string to an integer
- * @s: the string to use
- * Return:integer
- */
+ * _strchr - Locates a character in a string
+ * @s: String
+ * @c: Character to search
+ * Return: Pointer to the first occurrence of the character c in the string s
+ **/
 
-int _atoi(char *s)
+char *_strchr(char *s, char c)
 
 {
-
-	int counter = 0;
-
-	int i = 0;
-
-	unsigned int result = 0;
-
-	int sign = 0;
-
-	while (s[counter] != '\0')
+	while (*s != '\0') /*Declaring WHILE*/
 
 	{
-		if (s[counter] == '-')
-
-		sign++;
-
-		if (s[counter] >= 48 && s[counter] <= 57)
+		if (*s == c) /*if s ==  c*/
 
 		{
-			i++;
-
-			result = result * 10 + s[counter] - '0';
+			return (s); /*return s*/
 		}
 
-		if (i > 0 && (s[counter] < 48 || s[counter] > 57))
-			break;
-
-		counter++;
-
+		++s;
 	}
 
-	if (i == 0)
-		return (0);
+	if (*s == c)
 
-	if (sign % 2 == 0)
+	{
+		return (s);
+	}
 
-		return (result);
-
-	return (result * -1);
+	return (0);/* values null*/
 }
