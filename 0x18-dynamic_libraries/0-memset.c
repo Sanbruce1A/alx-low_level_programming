@@ -1,26 +1,25 @@
 #include "main.h"
 
 /**
- * _memset - a function that fills memory with a constant byte
- * @s: a char pointer given by main
- * @b: a constant byte
- * @n: how many byte of memory
- * Return: pointer to the memory s
+ *_memset -   fills memory with a constant byte
+ *@s: pointer block of memory to fill
+ *@b: value to set
+ *@n: bytes of the memory
+ *Return: dest
  */
 
 char *_memset(char *s, char b, unsigned int n)
 
 {
-	int night = 0; /*Night is my variable and was assigned 0*/
+	unsigned int i;
 
-	while (n > 0) /*as long as n is less than zero*/
+	/*Delacring FOR*/
+
+	for (i = 0; i < n; i++)
 
 	{
-		s[night] = b; /*Night is assigned to our char*/
-		night++; /*post-increment, value first incremented afterwards*/
-		n--; /*post-decrement*/
+		*(s + i) = b; /*add 1 position s*/
+	} /*END FOR*/
 
-	}
-
-	return (s); /*returning pointer to the memory of s*/
+	return (s);
 }

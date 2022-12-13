@@ -1,9 +1,10 @@
 #include "main.h"
+
 /**
- *_puts - prints a string with a new line
- * @str: a pointer given by the main function
- * Return:0
+ * _puts - pusts to stdout
+ * @str: params
  */
+
 void _puts(char *str)
 
 {
@@ -16,6 +17,6 @@ void _puts(char *str)
 
 		i++;
 	}
-	_putchar(10);
 
+	_putchar('\n');
 }

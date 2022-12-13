@@ -1,28 +1,47 @@
 #include "main.h"
-#include<stdlib.h>
-/**
- * _strcmp - function that compares two strings
- * @s1: a pointer in charge
- * @s2: a pointer 2 will be changed
- * Return: dest
- */
 
-int _strcmp(char *s1, char *s2)
+/**
+ * _strspn - Locates a character in a string
+ * @s: This is the main C string to be scanned.
+ * @accept: This is the string containing the list of characters to match in s
+ * Return: return count
+ **/
+
+unsigned int _strspn(char *s, char *accept)
 
 {
 
-	char *str_one = s1;
+	int i, j;
 
-	char *str_two = s2;
+	int count = 0;
 
-	while (*str_one != '\0' && *str_two != '\0' && *str_one == *str_two)
+	char *str1, *str2;
+
+	str1 = s;
+
+	str2 = accept;
+
+	i = 0;
+
+	while (str1[i] != '\0') /*Declaring WHILE *s */
 
 	{
-		str_one++;
+		j = 0;
+		while (str2[j] != '\0') /*Declaring WHILE *accept*/
+		{
+			if (str2[j] == str1[i]) /*Evaluate condition*/
+			{
+				count++; /*count number*/
+				break;
+			}
+			j++;    /*add j+1*/
+		}
 
-		str_two++;
-
+		if (s[i] != accept[j]) /*If aren't equals*/
+		{
+			break;
+		}
+		i++; /*add x+1*/
 	}
-
-	return (*str_one - *str_two);
+	return (count); /*return the value of count*/
 }

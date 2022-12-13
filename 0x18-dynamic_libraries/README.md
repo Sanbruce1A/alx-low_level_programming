@@ -1,1 +1,1 @@
-More in C library
+DYNAMIC LIBARAY
