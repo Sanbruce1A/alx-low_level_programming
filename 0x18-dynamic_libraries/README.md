@@ -1,1 +1,1 @@
- Dynamic llibraries
+ Dynamic llibrarie by sanis
