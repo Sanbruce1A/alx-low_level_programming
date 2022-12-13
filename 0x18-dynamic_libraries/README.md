@@ -1,1 +1,1 @@
-DYNAMIC LIBARAY
+ Dynamic llibraries
